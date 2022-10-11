@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body color */
+body {
+    background-color: rgb(156, 126, 103);
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* Header and nav bar*/
+header {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+    margin-top: 35px;
+    border-bottom: 2px solid rgb(57, 69, 109);
+}
+h1 {
+    font-size: 55px;
+    color: rgb(57, 69, 109);
+    /* border-bottom: 2px solid rgb(57, 69, 109); */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.btn {
+    background-color: rgb(94, 109, 132);
+}
+
+

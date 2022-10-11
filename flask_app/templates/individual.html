@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Roast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome {{ users.first_name }}</h1>
+            <nav>
+                <p><a href="/" class="btn">Home</a></p>
+                <p><a href="/profile/{{users.id}}" class="btn">Your Profiles</a></p>
+                <p><a href="/roasts" class="btn">All Roasts</a></p>
+                <p><a href="/logout" class="btn">Logout</a></p>
+            </nav>
+        </header>
+        <div class="profile">
+            <p>Roast Name: {{ roasts.name }}</p>
+            <p>Origin: {{ roasts.origin }}</p>
+            <p>Roast: {{ roasts.degree }}</p>
+            <p>Roast Number: {{ roasts.id }}</p>
+
+            {% if roasts.users.id == session.user_id %}
+            <p><a href="/roast/{{roasts.id}}/edit" class="btn">Edit this Roast</a></p>
+            {% endif %}
+
+            <p><a href="" class="btn">Buy this roast</a></p>
+        </div>
+    </div>
+</body>
+</html>

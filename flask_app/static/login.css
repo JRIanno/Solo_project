@@ -1,0 +1,23 @@
+/* body {
+    background-image: url('coffee_beans.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 65%;
+    opacity: 50%;
+} */
+
+form {
+    margin: 20px;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(57, 69, 109); */
+}
+
+button {
+    margin-top: 25px;
+}

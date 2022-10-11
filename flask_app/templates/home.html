@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringtown Coffee Co</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{[Stringtown Coffee Co]}</h1>
+            <nav>
+                <p><a href="/login" class="btn">login</a></p>
+                <p><a href="/roasts" class="btn">All Roasts</a></p>
+            </nav>
+        </header>
+        <div class="box">
+            <div>
+                <img src="{{ url_for('static', filename='coffee-cup.webp') }}" alt="coffee cup" width="400" height="300">
+            </div>    
+                <p class="p1">I love coffee. My wife will tell me that I'm obsessed whenever I am making a simple pour over or a shot of espresso. She loves the benefits of my obsession by the way. And perhaps I am, but I can say that I come to my love for coffee naturally. My family has a culture for great food and even better coffee. It doesn't matter where the conversation is, once dinner is finished we are warming up the espresso machine to continue the conversation or oddly enough talk about the coffee we're drinking. That is my family. Coffee is so much more than a drink. It's the experiences that we share.</p>
+                <p class="p1">A few years ago, my dad and I were inspired by a family friend who started roasting his own coffee at home. We were so intrigued that we both started roasting on our own even though at the time we lived a few states apart. What I found is that at times we would roast the same coffee beans and get slightly different results. They were both delicious to say the least. </p>
+                <p class="p1">That is what I would like to try to create today. A way to give each person the ability to create their own roast profiles though asking simple questions and then be able to make it to exactly how you want it. Once you have exactly what you like and what you want, share your coffee with your friends and family. That is what makes coffee great. The ability to share and discover what someone else has created.</p>
+        </div>
+            <p class="reg"><a href="/register" class="btn">Beging Your Coffee Journey Here</a></p>
+    </div>
+</body>
+</html>
