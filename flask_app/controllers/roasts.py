@@ -94,3 +94,7 @@ def roast_edit(roast_id):
 def delete(roast_id):
     Roasts.delete(roast_id)
     return redirect('/roasts')
+
+@app.route('/buy')
+def buy():
+    return render_template('buy.html')
